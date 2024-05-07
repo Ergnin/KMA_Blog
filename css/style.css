@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: rgb(250, 250, 250);
+    font-family: 'Lora', serif;
+}
+
+header {
+    background: #fff87d;
+    height: 66px;
+}
+
+header * {
+    color: #e47439;
+}
+
+header .logo {
+    float: left;
+    height: inherit;
+    margin-left: 2em;
+}
+
+header .logo-text {
+    margin: 5px;
+    font-family: 'Candal', serif;
+}
+
+header .logo-text span{
+    color:#f70c17
+}
+
+header ul {
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+header ul li {
+    float: left;
+    position: relative;
+}
+
+header ul li ul {
+    position: absolute;
+    top: 66px;
+    right: 0px;
+    width: 180px;
+    display: none;
+}
+
+header ul li:hover ul {
+    display: block;
+}
+
+header ul li ul li {
+    width: 100%;
+}
+
+header ul li ul li a {
+    padding: 10px;
+    background: white;
+}
+
+header ul li ul li a:hover {
+    background: rgb(230, 230, 230);
+}
+
+header ul li a {
+    display: block;
+    padding: 21px;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+
+header ul li a:hover {
+    background: #dad46b;
+    transition: 0.5s;
+}
+
+header .menu-toggle {
+    display: none;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 750px) {
+    header {
+        position: relative;
+    }
+
+    header ul {
+        width: 100%;
+        background: #f0ea76;
+        max-height: 0px;
+        overflow: hidden;
+    }
+
+    .showing {
+        max-height: 100em;
+    }
+
+    header ul li {
+        width: 100%;
+    }
+
+    header ul li ul {
+        position: static;
+        display: block;
+        background: inherit;
+        width: 100%;
+    }
+
+    header ul li ul li a {
+        padding: 10px;
+        background: #f0ea76;
+        padding-left: 50px;
+    }
+
+    header ul li ul li a:hover {
+        background: #dad46b;
+    }
+
+    header .menu-toggle {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        font-size: 1.9em;
+    }
+    
+    header .logo {
+        margin-left: .5em;
+    }
+}
