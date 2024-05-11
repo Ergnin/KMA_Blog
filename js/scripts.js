@@ -1,4 +1,8 @@
 $(document).ready(function() {
+    $('.logo-img').click(function() {
+        location.href = 'index.html';
+    });
+
     $('.menu-toggle').on('click', function() {
         $('.nav').toggleClass('showing');
         $('.nav ul').toggleClass('showing');
