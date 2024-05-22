@@ -17,8 +17,8 @@ $(document).ready(function() {
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
-        prevArrow: $('.prev'),
         nextArrow: $('.next'),
+        prevArrow: $('.prev'),
         responsive: [
             {
               breakpoint: 1024,

@@ -159,15 +159,6 @@ header .menu-toggle {
     margin: 30px auto;
 }
 
-.post-slider .prev {
-    position: absolute;
-    top: 50%;
-    left: 30px;
-    font-size: 2em;
-    color: #e47439;
-    cursor: pointer;
-}
-
 .post-slider .next {
     position: absolute;
     top: 50%;
@@ -175,6 +166,17 @@ header .menu-toggle {
     font-size: 2em;
     color: #e47439;
     cursor: pointer;
+    z-index: 88888;
+}
+
+.post-slider .prev {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    font-size: 2em;
+    color: #e47439;
+    cursor: pointer;
+    z-index: 88888;
 }
 
 .post-slider .post-wrapper {
@@ -218,6 +220,65 @@ header .menu-toggle {
     float: left;
 }
 
+.content .main-content.single {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.content .main-content.single .time-and-type {
+    font-size: 0.8em;
+    padding-left: 5px;
+}
+
+.content .main-content.single p {
+    text-align: justify;
+    font-size: 1.1em;
+    padding-left: 5px;
+}
+
+.content .main-content.single ul {
+    list-style-position: inside;
+    text-align: justify;
+    font-size: 1.1em;
+    padding-left: 5px;
+}
+
+.content .main-content.single ul li {
+    padding-left: 30px;
+}
+
+.content .main-content.single .post-summary {
+    color: #444;
+    font-weight: bold;
+}
+
+.content .main-content.single .post-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.content .main-content.single .post-writter {
+    text-align: right;
+}
+
+.content .sidebar.single .post-search {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.content .sidebar.single .post-search .text-input {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/5/55/Magnifying_glass_icon.svg");
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 20px) center;
+}
+
 .content .main-content .post {
     width: 95%;
     height: 270px;
@@ -227,13 +288,30 @@ header .menu-toggle {
     position: relative;
 }
 
+.content .popular div:not(:last-child) {
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.content .popular .post img {
+    height: 60px;
+    width: 100px;
+    float: left;
+    margin-right: 10px;
+}
+
+.content .popular .post h4:hover {
+    color: #e47439;
+}
+
 .content .main-content .post .doc-them {
     position: absolute;
     bottom: 10px;
     right: 10px;
 }
 
-.content .main-content .post .post-img {
+.content .main-content .post .blog-img {
     width: 40%;
     height: 100%;
     float: left;
@@ -255,6 +333,10 @@ header .menu-toggle {
     width: 30%;
     float: left;
     height: 300px;
+}
+
+.content .sidebar.single {
+    padding: 0px 10px;
 }
 
 .content .sidebar .section {
@@ -302,12 +384,12 @@ header .menu-toggle {
 .footer {
     background: #323239;
     color: #d3d3d3;
-    height: 350px;
+    height: 380px;
     position: relative;
 }
 
 .footer .footer-content {
-    height: 320px;
+    height: 350px;
     display: flex;
 }
 
@@ -323,7 +405,7 @@ header .menu-toggle {
 .footer .footer-content .about .contact span {
     display: block;
     font-size: 1.1em;
-    margin-bottom: 8px;
+    margin: 10px 0px 8px 0px;
 }
 
 .footer .footer-content .about .socials a {
@@ -346,7 +428,7 @@ header .menu-toggle {
 .footer .footer-content .links ul a {
     display: block;
     margin-bottom: 10px;
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 .footer .footer-content .links ul a:hover {
@@ -396,6 +478,7 @@ header .menu-toggle {
 
     header ul li {
         width: 100%;
+        z-index: 88888;
     }
 
     header ul li ul {
@@ -427,3 +510,43 @@ header .menu-toggle {
         margin-left: .5em;
     }
 }
+
+@media only screen and (max-width: 800px) {
+    .content .main-content .post .post-preview i {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1025px) {
+    .content .main-content .post .post-preview .preview-text {
+        display: none;
+    }
+
+    .footer .footer-content {
+        height: 350px;
+        display: flex;
+    }
+    
+    .footer .footer-content .footer-section p {
+        display: none;
+    }
+
+    .footer .footer-content .about .contact span {
+        font-size: 1.1em;
+        margin: 10px 0px 8px 0px;
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    .footer .footer-content .links ul {
+        display: none;
+    }
+
+    .footer .footer-content .contact-form .contact-input {
+        display: none;
+    }
+
+    .footer .footer-content .contact-form button {
+        display: none;
+    }
+}    
