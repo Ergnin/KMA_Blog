@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Font Awesome (Icon) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css"  />
+
+    <!-- Google Fonts (Phông chữ) -->
+    <link href="https://fonts.googleapis.com/css2?family=Candal&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+    <!-- Giao diện -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Bài viết</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header>
+        <div class="logo">
+            <img src="images/logo_kma.png" alt="" class="logo-img">
+            <h1 class="logo-text"><span>KMA</span>Blog</h1>
+        </div>
+        <i class="fa fa-bars menu-toggle"></i>
+        <ul class="nav">
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Thông tin</a></li>
+            <li><a href="#">Hỗ trợ</a></li>
+            <!-- <li><a href="#">Đăng ký</a></li>
+            <li><a href="#">Đăng nhập</a></li> -->
+            <li>
+                <a href="#">
+                    <i class="fa fa-user"></i>
+                    Thắng
+                    <i class="fa fa-chevron-down" style="font-size: .8em;"></i>
+                </a>    
+                <ul>
+                    <li><a href="#">Thông tin cá nhân</a></li>
+                    <li><a href="#">Đăng xuất</a></li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+
+    <!-- // Header -->
+
+    <!-- Page Wrapper -->
+    <div class="page-wrapper">
+        
+        <!-- Nội dung blog -->
+        <div class="content clearfix">
+
+            <!-- Nội dung chính -->
+            <div class="main-content single">
+                <h1 class="post-title">Hơn 43 GB dữ liệu từ Boeing bị LockBit đăng tải công khai</h1>
+                <div class="time-and-type">
+                    15/11/2023 | <a href="#">Các nguy cơ và mối đe dọa</a>
+                </div>
+                <p class="post-summary">Nhóm ransomware LockBit đã đăng tải dữ liệu được cho là của Boeing chỉ khoảng một tuần sau khi gã khổng lồ hàng không vũ trụ xác nhận họ trở thành nạn nhân của một cuộc tấn công mạng.</p>
+                <p>Theo Engadget, vụ rò rỉ bao gồm hơn 43 GB tệp sao lưu mà LockBit cho biết đã đánh cắp được từ Boeing. Tính đến sáng 14.11, trang web dịch vụ của Boeing vẫn không hoạt động và một thông báo được đăng trên trang này thừa nhận một số sự cố mạng ảnh hưởng đến hoạt động kinh doanh phân phối cũng như linh kiện của Boeing, tuy nhiên hãng khẳng định điều đó không ảnh hưởng đến sự an toàn máy bay của hãng.</p>
+                <img src="images/boeing.webp" class="post-img">
+                <p>Người phát ngôn của Boeing cho biết trong một tuyên bố rằng: "Liên quan đến vụ việc này, một nhóm tội phạm ransomware đã tiết lộ thông tin mà chúng cho là đã lấy từ hệ thống của chúng tôi. Chúng tôi tiếp tục điều tra vụ việc và sẽ giữ liên lạc với cơ quan thực thi pháp luật, cơ quan quản lý và các bên có khả năng bị ảnh hưởng nếu thích hợp".</p>
+                <p>Vụ việc bắt đầu vào ngày 27.10 khi LockBit liệt kê Boeing là nạn nhân trên trang web của mình, đồng thời cho biết công ty Mỹ có thời hạn đến ngày 2.11 để đàm phán thanh toán. Nhóm này sau đó cũng đã loại bỏ Boeing khỏi danh sách nạn nhân trên trang web của mình, nhưng sau đó đã liệt kê trở lại vào ngày 7.11 và tuyên bố Boeing đã phớt lờ nỗ lực đàm phán. LockBit ban đầu đe dọa sẽ phát hành 4 GB dữ liệu mẫu trước khi quyết định công bố tất cả dữ liệu mà nhóm đã đánh cắp vào ngày 10.11.</p>
+                <p>Dữ liệu sao lưu của Boeing do LockBit phát hành bao gồm dữ liệu cấu hình cho phần mềm quản lý CNTT, nhật ký kiểm tra và giám sát cũng như một số thông tin Citrix được cho là có liên quan đến lần tấn công mạng trước đó.</p>
+                <p>Theo Cục Điều tra liên bang Mỹ (FBI), LockBit đã phát triển thành một băng nhóm ransomware khét tiếng kể từ lần đầu tiên xuất hiện trên các diễn đàn tội phạm mạng của Nga vào tháng 1.2020. Đã có khoảng 1.700 cuộc tấn công ở Mỹ có liên quan đến LockBit, trong đó các công ty phải trả khoảng 91 triệu USD tiền chuộc cho băng nhóm này. Các nạn nhân được đề cập bao gồm Ngân hàng Trung Quốc - ICBC, TSMC và nhà bán lẻ sách Indigo Books and Music của Canada.</p>
+                <p class="post-writter">Kiến Văn</p>
+            </div>
+            <!-- // Nội dung chính -->
+
+            <!-- Sidebar -->
+            <div class="sidebar single">
+
+                <div class="post-search">
+                    <form action="index.html" method="post">
+                        <input type="text" name="search-term" class="text-input" placeholder="Tìm kiếm...">
+                    </form>
+                </div>
+
+                <div class="section popular">
+                    <h2 class="section-title">Nổi bật</h2>
+
+                    <div class="post clearfix">
+                        <a href="single.html"><img src="images/img_1.png"></a>
+                        <a href="single.html">
+                            <h4>Nhóm tin tặc RansomHub rò rỉ dữ liệu đánh cắp từ Change Healthcare</h4>
+                        </a>
+                    </div>
+
+                    <div class="post clearfix">
+                        <a href="single_2.html"><img src="images/img_2.png"></a>
+                        <a href="single_2.html">
+                            <h4>CobaltStrike SMB Beacon Analysis</h4>
+                        </a>
+                    </div>
+
+                    <div class="post clearfix">
+                        <a href="single_3.html"><img src="images/victim.webp"></a>
+                        <a href="single_3.html">
+                            <h4>Nhóm hacker Kinsing khai thác nhiều lỗ hổng hơn để mở rộng botnet cho cryptojacking</h4>
+                        </a>
+                    </div>
+
+                    <div class="post clearfix">
+                        <a href="single_4.html"><img src="images/pig.webp"></a>
+                        <a href="single_4.html">
+                            <h4>Công dân Trung Quốc bị bắt vì rửa 73 triệu đô la trong vụ lừa đảo giết mổ lợn</h4>
+                        </a>
+                    </div>
+
+                    <div class="post clearfix">
+                        <a href="single_5.html"><img src="images/boeing.webp"></a>
+                        <a href="single_5.html">
+                            <h4>Hơn 43 GB dữ liệu từ Boeing bị LockBit đăng tải công khai</h4>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="section topics">
+                    <h2 class="section-title">Danh Mục</h2>
+                    <ul>
+                        <li><a href="#">Các nguy cơ và mối đe dọa</a></li>
+                        <li><a href="#">Công nghệ bảo mật</a></li>
+                        <li><a href="#">Bảo vệ dữ liệu cá nhân</a></li>
+                        <li><a href="#">An toàn ứng dụng và web</a></li>
+                        <li><a href="#">An toàn mạng và hệ thống</a></li>
+                        <li><a href="#">Bảo mật đám mây</a></li>
+                    </ul>
+                </div>
+                <!-- // Sidebar -->
+
+            </div>
+        </div>
+        <!-- // Nội dung blog -->
+
+    </div>
+    <!-- // Page Wrapper -->
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <img src="images/logo_kma.png" alt="" class="logo-img">
+                <h1 class="logo-text"><span>KMA</span>Blog</h1>
+                <p>
+                    KMABlog là một trang web chuyên về tin tức an toàn thông tin, cung cấp các bài viết mới nhất về các cuộc tấn công và đánh cắp dữ liệu cũng như cách bảo vệ thông tin cá nhân, phòng chống hack và các biện pháp an ninh mạng.
+                </p>
+                <div class="contact">
+                    <span><i class="fas fa-phone">&nbsp;0965 882 072</i></span>
+                    <span><i class="fas fa-envelope">&nbsp;thangdle03@gmail.com</i></span>
+                </div>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="https://github.com/Ergnin/KMA_Blog"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h2>Liên kết nhanh</h2>
+                <br>
+                <ul>
+                    <a href="#">
+                        <li>Đăng xuất</li>
+                    </a>
+                    <a href="#">
+                        <li>Thư viện</li>
+                    </a>
+                    <a href="#">
+                        <li>Quản trị viên</li>
+                    </a>
+                    <a href="#">
+                        <li>Thống kê dữ liệu</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="footer-section contact-form">
+                <h2>Liên hệ chúng tôi</h2>
+                <br>
+                <form action="index.html" method="post">
+                    <input type="email" name="email" class="text-input contact-input" placeholder="example@gmail.com">
+                    <textarea name="message" rows=3 class="text-input contact-input message" placeholder="Tin nhắn..."></textarea>
+                    <button type="submit" class="btn btn-big contact-btn">
+                        <i class="fas fa-envelope"></i>
+                        Gửi</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; KMABlog.com | Thiết kế bởi Nhóm 25
+        </div>
+    </div>
+    <!-- // Footer -->
+
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Slick carousel -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- Custom Script -->
+    <script src="js/scripts.js"></script>
+
+</body>
+
+</html>
