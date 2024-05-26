@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Font Awesome (Icon) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css"  />
+
+    <!-- Google Fonts (Phông chữ) -->
+    <link href="https://fonts.googleapis.com/css2?family=Candal&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+    <!-- Giao diện -->
+    <link rel="stylesheet" href="../../css/style.css">
+
+    <link rel="stylesheet" href="../../css/admin.css">
+
+    <title>QTV - Thêm người dùng</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header>
+        <div class="logo">
+            <a href="../../index.html"><img src="../../images/logo_kma.png" class="logo-img"></a>
+            <h1 class="logo-text"><span>KMA</span>Blog</h1>
+        </div>
+        <i class="fa fa-bars menu-toggle"></i>
+        <ul class="nav">
+            <li>
+                <a href="#">
+                    <i class="fa fa-user"></i>
+                    Thắng
+                    <i class="fa fa-chevron-down" style="font-size: .8em;"></i>
+                </a>    
+                <ul>
+                    <li><a href="#">Đăng xuất</a></li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+
+    <!-- // Header -->
+
+    <!-- Admin Page Wrapper -->
+    <div class="admin-wrapper">
+
+        <!-- Sidebar Trái -->
+            <div class="left-sidebar">
+                <ul>
+                    <li><a href="../index_posts.html">Quản lý bài viết</a></li>
+                    <li><a href="index_users.html">Quản lý người dùng</a></li>
+                    <li><a href="../topics/index_topics.html">Quản lý danh mục</a></li>
+                </ul>
+            </div>
+        <!-- // Sidebar Trái -->
+
+        <!-- Admin Content -->
+            <div class="admin-content">
+                <div class="button-group">
+                    <a href="create_users.html" class="btn btn-big">Thêm người dùng</a>
+                    <a href="index_users.html" class="btn btn-big">Quản lý người dùng</a>
+                </div>
+                
+                <div class="content">
+                    <h2 class="page-title">Thêm người dùng</h2>
+
+                    <form action="create_users.html" method="post">
+
+                        <div>
+                            <label>Tên tài khoản</label>
+                            <input type="text" name="username" class="text-input">
+                        </div>
+            
+                        <div>
+                            <label>Email</label>
+                            <input type="email" name="email" class="text-input">
+                        </div>
+            
+                        <div>
+                            <label>Mật khẩu</label>
+                            <input type="password" name="password" class="text-input">
+                        </div>
+            
+                        <div>
+                            <label>Nhập lại mật khẩu</label>
+                            <input type="password" name="passwordConf" class="text-input">
+                        </div>
+
+                        <div>
+                            <label>Danh mục</label>
+                            <select name="role" class="text-input">
+                                <option value="QTV">Quản trị viên</option>
+                                <option value="ND">Người dùng</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <button type="submit" class="btn btn-big">Đăng tải</button>
+                        </div>
+
+                    </form>
+                    
+                </div>
+                
+            </div>
+        <!-- // Admin Content -->
+
+    </div>
+    <!-- // Admin Page Wrapper -->
+
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- CKEditor -->
+    <script src="https://cdn.ckeditor.com/ckeditor5/41.4.2/classic/ckeditor.js"></script>
+
+    <!-- Custom Script -->
+    <script src="../../js/scripts.js"></script>
+
+</body>
+
+</html>

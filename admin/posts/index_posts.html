@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Font Awesome (Icon) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css"  />
+
+    <!-- Google Fonts (Phông chữ) -->
+    <link href="https://fonts.googleapis.com/css2?family=Candal&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+    <!-- Giao diện -->
+    <link rel="stylesheet" href="../../css/style.css">
+
+    <link rel="stylesheet" href="../../css/admin.css">
+
+    <title>QTV - Quản lý bài viết</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header>
+        <div class="logo">
+            <a href="../../index.html"><img src="../../images/logo_kma.png" class="logo-img"></a>
+            <h1 class="logo-text"><span>KMA</span>Blog</h1>
+        </div>
+        <i class="fa fa-bars menu-toggle"></i>
+        <ul class="nav">
+            <li>
+                <a href="#">
+                    <i class="fa fa-user"></i>
+                    Thắng
+                    <i class="fa fa-chevron-down" style="font-size: .8em;"></i>
+                </a>    
+                <ul>
+                    <li><a href="#">Đăng xuất</a></li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+
+    <!-- // Header -->
+
+    <!-- Admin Page Wrapper -->
+    <div class="admin-wrapper">
+
+        <!-- Sidebar Trái -->
+            <div class="left-sidebar">
+                <ul>
+                    <li><a href="index_posts.html">Quản lý bài viết</a></li>
+                    <li><a href="../users/index_users.html">Quản lý người dùng</a></li>
+                    <li><a href="../topics/index_topics.html">Quản lý danh mục</a></li>
+                </ul>
+            </div>
+        <!-- // Sidebar Trái -->
+
+        <!-- Admin Content -->
+            <div class="admin-content">
+                <div class="button-group">
+                    <a href="create_posts.html" class="btn btn-big">Thêm bài viết</a>
+                    <a href="index_posts.html" class="btn btn-big">Quản lý bài viết</a>
+                </div>
+                
+                <div class="content">
+                    <h2 class="page-title">Quản lý bài viết</h2>
+
+                    <table>
+                        <head>
+                            <th>STT</th>
+                            <th>Tiêu đề</th>
+                            <th>Tác giả</th>
+                            <th colspan="3">Chức năng</th>
+                        </head>
+
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Nhóm tin tặc RansomHub rò rỉ dữ liệu đánh cắp từ Change Healthcare</td>
+                                <td>Trường An</td>
+                                <td><a href="#" class="edit">Sửa</a></td>
+                                <td><a href="#" class="delete">Xóa</a></td>
+                                <td><a href="#" class="publish">Đăng</a></td>
+                            </tr>
+
+                            <tr>
+                                <td>2</td>
+                                <td>[Ghi chú nhanh] Phân tích SMB Beacon trong công cụ CobaltStrike</td>
+                                <td>Vênh</td>
+                                <td><a href="#" class="edit">Sửa</a></td>
+                                <td><a href="#" class="delete">Xóa</a></td>
+                                <td><a href="#" class="publish">Đăng</a></td>
+                            </tr>
+
+                            <tr>
+                                <td>3</td>
+                                <td>Kinsing khai thác nhiều lỗ hổng hơn để mở rộng botnet cho cryptojacking</td>
+                                <td>Newsroom</td>
+                                <td><a href="#" class="edit">Sửa</a></td>
+                                <td><a href="#" class="delete">Xóa</a></td>
+                                <td><a href="#" class="publish">Đăng</a></td>
+                            </tr>
+
+                            <tr>
+                                <td>4</td>
+                                <td>Công dân Trung Quốc bị bắt vì rửa 73 triệu đô la trong vụ lừa đảo giết mổ lợn</td>
+                                <td>Newsroom</td>
+                                <td><a href="#" class="edit">Sửa</a></td>
+                                <td><a href="#" class="delete">Xóa</a></td>
+                                <td><a href="#" class="publish">Đăng</a></td>
+                            </tr>
+
+                            <tr>
+                                <td>5</td>
+                                <td>Hơn 43 GB dữ liệu từ Boeing bị LockBit đăng tải một cách công khai</td>
+                                <td>Kiến Văn</td>
+                                <td><a href="#" class="edit">Sửa</a></td>
+                                <td><a href="#" class="delete">Xóa</a></td>
+                                <td><a href="#" class="publish">Đăng</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+            </div>
+        <!-- // Admin Content -->
+
+    </div>
+    <!-- // Admin Page Wrapper -->
+
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Custom Script -->
+    <script src="../../js/scripts.js"></script>
+
+</body>
+
+</html>
